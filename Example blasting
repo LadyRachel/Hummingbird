@@ -1,0 +1,15 @@
+
+#echo -e ">MN822292.1 Hydra vulgaris opsin (OpD38) mRNA, complete cds\n[atggaaaatg caaccaagtg gtgtcagatc agtgcgtttt ttgtagcatt tccttctttt acatcg attg ccttgcttac cgcaataagt tttataaaag 
+catatttaat aaatgaacat tttttgattg gtgatatgat ttatagaaaa gtggttaagg ttacaatttt atgttgttgg atatacggac tgttttggtc tactttccct ttaattg gag tttcgtctta cacacttgaa tctaccaaag cacgctgttc 
+aattaagtgg tatacaaaca ccaatactga aa aactgtat ttaatactac ttctcgtgtt ttgctacact attcctgttt ctatagtttt agcttcgact atgatttc tg caagatttgt acgatcgagt tttaaaatta gctctagttc tttagggatg 
+ggggagtcat ttgtcaaaat att taaatta agagaagcta aagtaaaatt ttcactcact ttaatgtgtt tgtcatttat aatgttttgg actccatac g caattattgg tcttttatcg ggattcgctc gtgtaaagca tccgaaatgg ttgcttgaaa 
+ctgcagcttt gttt gcaaag ttatctgcta tggtaaaccc actattatat tggcaaaaag aagattttaa aaaaaaagtt aggaaagcat ttttagtttt tcgtacttat gtcttctact cataa]" | blastn -db ncbi_dataset -out op.n 
+
+
+#blastn -query test/lacI.fasta -db db/swissprot/swissprot.fa
+
+module load blast/2.15.0
+module load miniconda3/3.12
+
+cd #into working directory
+blastn -db ### -query ### -out ###
