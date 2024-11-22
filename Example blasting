@@ -13,3 +13,57 @@ module load miniconda3/3.12
 
 cd #into working directory
 blastn -db ### -query ### -out ###
+#make sure each is a fasta file
+
+nano #OPA1_seq
+
+blastn -db #GCF_022113875.1_Hydra_105_v3_genomic.fna -query #OPA1_seq -out #OPA1_blast
+
+#!/bin/bash
+
+#SBATCH -p 128x24   # Partition name
+#SBATCH -J NAME_job        # Job name
+#SBATCH --mail-user= email
+#SBATCH --mail-type=ALL
+#SBATCH -o name_out_file    # Name of stdout output file
+#SBATCH -N 1       # Total number of nodes requested (128x24/Instructional only)
+#SBATCH -n 16        # Total number of mpi tasks requested per node
+#SBATCH -t 12:00:00  # Run Time (hh:mm:ss) - 1.5 hours (optional)
+#SBATCH --mem=4G # Memory to be allocated PER NODE
+
+module load XXX
+
+Scripts
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+#!/bin/bash
+
+#SBATCH -p 128x24   # Partition name
+#SBATCH -J 10blasts       # Job name
+#SBATCH --mail-user= rlparson@ucsc.edu
+#SBATCH --mail-type=ALL
+#SBATCH -o 105first10opsinblast    # Name of stdout output file
+#SBATCH -N 1       # Total number of nodes requested (128x24/Instructional only)
+#SBATCH -n 16        # Total number of mpi tasks requested per node
+#SBATCH -t 5:00:00  # Run Time (hh:mm:ss) - 1.5 hours (optional)
+#SBATCH --mem=4G # Memory to be allocated PER NODE
+
+module load blast/2.15.0
+module load miniconda3/3.12
+
+
+blastn -db GCF_022113875.1_Hydra_105_v3_genomic.fna -query OPB1_seq -out OPB1_blast
+blastn -db GCF_022113875.1_Hydra_105_v3_genomic.fna -query OPC1_seq -out OPC1_blast
+blastn -db GCF_022113875.1_Hydra_105_v3_genomic.fna -query OPC2_seq -out OPC2_blast
+blastn -db GCF_022113875.1_Hydra_105_v3_genomic.fna -query OPC3_seq -out OPC3_blast
+blastn -db GCF_022113875.1_Hydra_105_v3_genomic.fna -query OPC4_seq -out OPC4_blast
+blastn -db GCF_022113875.1_Hydra_105_v3_genomic.fna -query OPC5_seq -out OPC5_blast
+blastn -db GCF_022113875.1_Hydra_105_v3_genomic.fna -query OPD1_seq -out OPD1_blast
+blastn -db GCF_022113875.1_Hydra_105_v3_genomic.fna -query OPD2_seq -out OPD2_blast
+
+
+
+
+
+
+
