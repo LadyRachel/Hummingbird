@@ -62,6 +62,7 @@ blastn -db GCF_022113875.1_Hydra_105_v3_genomic.fna -query OPD1_seq -out OPD1_bl
 blastn -db GCF_022113875.1_Hydra_105_v3_genomic.fna -query OPD2_seq -out OPD2_blast
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 making each blast file 
+Search in NIH Nucleotide database for Opsin ID and open FASTA
 nano #OPXX_seq 
   #-> once in the file, paste the entire gene with title and all 
 
