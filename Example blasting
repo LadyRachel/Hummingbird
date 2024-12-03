@@ -60,7 +60,10 @@ blastn -db GCF_022113875.1_Hydra_105_v3_genomic.fna -query OPC4_seq -out OPC4_bl
 blastn -db GCF_022113875.1_Hydra_105_v3_genomic.fna -query OPC5_seq -out OPC5_blast
 blastn -db GCF_022113875.1_Hydra_105_v3_genomic.fna -query OPD1_seq -out OPD1_blast
 blastn -db GCF_022113875.1_Hydra_105_v3_genomic.fna -query OPD2_seq -out OPD2_blast
-
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+making each blast file 
+nano #OPXX_seq 
+  #-> once in the file, paste the entire gene with title and all 
 
 
 
