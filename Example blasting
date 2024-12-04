@@ -68,6 +68,7 @@ nano #OPXX_seq
 
 
 
+$ sbatch job.mpi
 
-
+squeue -u rlparson
 
