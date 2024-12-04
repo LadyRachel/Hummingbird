@@ -72,3 +72,9 @@ $ sbatch job.mpi
 
 squeue -u rlparson
 
+
+
+Sam tools!
+ samtools faidx GCF_022113875.1_Hydra_105_v3_genomic.fna NC_061164.1:24867664-24868590
+#MAKE SURE THE SEQUENCE COMES FROM THAT CHROMOSOME 
+#Can find the chromosome name from looking at the fai file using "head XXX.fna.fai"
