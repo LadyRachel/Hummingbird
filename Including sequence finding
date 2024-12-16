@@ -86,3 +86,10 @@ module load miniconda3/3.12
 module load samtools
 [rlparson@hb-login ~]$  samtools faidx -n 0 GCF_022113875.1_Hydra_105_v3_genomic.fna NC_061164.1:24867664-24868590>H105SeqOPD1
 
+
+"cd .." moves one directory up
+
+cp ~/v3H105/ncbi_dataset/data/GCF_022113875.1/GCF_022113875.1_Hydra_105_v3_genomic.fna ./
+the last little ./ puts whatever you are copying to the directory you are in!
+
+
