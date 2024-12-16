@@ -1,0 +1,59 @@
+#!/bin/bash
+
+#SBATCH -p 128x24   # Partition name
+#SBATCH -J OpsinBlast105       # Job name
+#SBATCH --mail-user=rlparson@ucsc.edu
+#SBATCH --mail-type=ALL
+#SBATCH -o OpsinBlast105error.out    # Name of stdout output file
+#SBATCH -N 1       # Total number of nodes requested (128x24/Instructional only)
+#SBATCH -t 5:00:00  # Run Time (hh:mm:ss) - 1.5 hours (optional)
+#SBATCH --mem=4G # Memory to be allocated PER NODE
+
+module load miniconda3/3.12
+module load blast/2.15.0
+
+blastn -db GCF_022113875.1_Hydra_105_v3_genomic.fna -query OpA01Seq.out -out OPA01_blast.out
+blastn -db GCF_022113875.1_Hydra_105_v3_genomic.fna -query OpB01Seq.out -out OPB01_blast.out
+blastn -db GCF_022113875.1_Hydra_105_v3_genomic.fna -query OpC01Seq.out -out OPC01_blast.out
+blastn -db GCF_022113875.1_Hydra_105_v3_genomic.fna -query OpC02Seq.out -out OPC02_blast.out
+blastn -db GCF_022113875.1_Hydra_105_v3_genomic.fna -query OpC03Seq.out -out OPC03_blast.out
+blastn -db GCF_022113875.1_Hydra_105_v3_genomic.fna -query OpC04Seq.out -out OPC04_blast.out
+blastn -db GCF_022113875.1_Hydra_105_v3_genomic.fna -query OpC05Seq.out -out OPC05_blast.out
+blastn -db GCF_022113875.1_Hydra_105_v3_genomic.fna -query OpD01Seq.out -out OPD01_blast.out
+blastn -db GCF_022113875.1_Hydra_105_v3_genomic.fna -query OpD02Seq.out -out OPD02_blast.out
+blastn -db GCF_022113875.1_Hydra_105_v3_genomic.fna -query OpD03Seq.out -out OPD03_blast.out
+blastn -db GCF_022113875.1_Hydra_105_v3_genomic.fna -query OpD04Seq.out -out OPD04_blast.out
+blastn -db GCF_022113875.1_Hydra_105_v3_genomic.fna -query OpD05Seq.out -out OPD05_blast.out
+blastn -db GCF_022113875.1_Hydra_105_v3_genomic.fna -query OpD06Seq.out -out OPD06_blast.out
+blastn -db GCF_022113875.1_Hydra_105_v3_genomic.fna -query OpD07Seq.out -out OPD07_blast.out
+blastn -db GCF_022113875.1_Hydra_105_v3_genomic.fna -query OpD08Seq.out -out OPD08_blast.out
+blastn -db GCF_022113875.1_Hydra_105_v3_genomic.fna -query OpD09Seq.out -out OPD09_blast.out
+blastn -db GCF_022113875.1_Hydra_105_v3_genomic.fna -query OpD10Seq.out -out OPD10_blast.out
+blastn -db GCF_022113875.1_Hydra_105_v3_genomic.fna -query OpD11Seq.out -out OPD11_blast.out
+blastn -db GCF_022113875.1_Hydra_105_v3_genomic.fna -query OpD12Seq.out -out OPD12_blast.out
+blastn -db GCF_022113875.1_Hydra_105_v3_genomic.fna -query OpD13Seq.out -out OPD13_blast.out
+blastn -db GCF_022113875.1_Hydra_105_v3_genomic.fna -query OpD14Seq.out -out OPD14_blast.out
+blastn -db GCF_022113875.1_Hydra_105_v3_genomic.fna -query OpD15Seq.out -out OPD15_blast.out
+blastn -db GCF_022113875.1_Hydra_105_v3_genomic.fna -query OpD16Seq.out -out OPD16_blast.out
+blastn -db GCF_022113875.1_Hydra_105_v3_genomic.fna -query OpD17Seq.out -out OPD17_blast.out
+blastn -db GCF_022113875.1_Hydra_105_v3_genomic.fna -query OpD18Seq.out -out OPD18_blast.out
+blastn -db GCF_022113875.1_Hydra_105_v3_genomic.fna -query OpD19Seq.out -out OPD19_blast.out
+blastn -db GCF_022113875.1_Hydra_105_v3_genomic.fna -query OpD20Seq.out -out OPD20_blast.out
+blastn -db GCF_022113875.1_Hydra_105_v3_genomic.fna -query OpD21Seq.out -out OPD21_blast.out
+blastn -db GCF_022113875.1_Hydra_105_v3_genomic.fna -query OpD22Seq.out -out OPD22_blast.out
+blastn -db GCF_022113875.1_Hydra_105_v3_genomic.fna -query OpD23Seq.out -out OPD23_blast.out
+blastn -db GCF_022113875.1_Hydra_105_v3_genomic.fna -query OpD24Seq.out -out OPD24_blast.out
+blastn -db GCF_022113875.1_Hydra_105_v3_genomic.fna -query OpD25Seq.out -out OPD25_blast.out
+blastn -db GCF_022113875.1_Hydra_105_v3_genomic.fna -query OpD26Seq.out -out OPD26_blast.out
+blastn -db GCF_022113875.1_Hydra_105_v3_genomic.fna -query OpD27Seq.out -out OPD27_blast.out
+blastn -db GCF_022113875.1_Hydra_105_v3_genomic.fna -query OpD28Seq.out -out OPD28_blast.out
+blastn -db GCF_022113875.1_Hydra_105_v3_genomic.fna -query OpD29Seq.out -out OPD29_blast.out
+blastn -db GCF_022113875.1_Hydra_105_v3_genomic.fna -query OpD30Seq.out -out OPD30_blast.out
+blastn -db GCF_022113875.1_Hydra_105_v3_genomic.fna -query OpD31Seq.out -out OPD31_blast.out
+blastn -db GCF_022113875.1_Hydra_105_v3_genomic.fna -query OpD32Seq.out -out OPD32_blast.out
+blastn -db GCF_022113875.1_Hydra_105_v3_genomic.fna -query OpD33Seq.out -out OPD33_blast.out
+blastn -db GCF_022113875.1_Hydra_105_v3_genomic.fna -query OpD34Seq.out -out OPD34_blast.out
+blastn -db GCF_022113875.1_Hydra_105_v3_genomic.fna -query OpD35Seq.out -out OPD35_blast.out
+blastn -db GCF_022113875.1_Hydra_105_v3_genomic.fna -query OpD36Seq.out -out OPD36_blast.out
+blastn -db GCF_022113875.1_Hydra_105_v3_genomic.fna -query OpD37Seq.out -out OPD37_blast.out
+blastn -db GCF_022113875.1_Hydra_105_v3_genomic.fna -query OpD38Seq.out -out OPD38_blast.out
