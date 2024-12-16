@@ -1,58 +1,58 @@
 #!/bin/bash
 
 #SBATCH -p 128x24   # Partition name
-#SBATCH -J NAME_job        # Job name
-#SBATCH --mail-user= email
+#SBATCH -J OpsinSeq105       # Job name
+#SBATCH --mail-user=rlparson@ucsc.edu
 #SBATCH --mail-type=ALL
-#SBATCH -o name_out_file    # Name of stdout output file
+#SBATCH -o OpsinSeq105error.out    # Name of stdout output file
 #SBATCH -N 1       # Total number of nodes requested (128x24/Instructional only)
-#SBATCH -n 16        # Total number of mpi tasks requested per node
-#SBATCH -t 12:00:00  # Run Time (hh:mm:ss) - 1.5 hours (optional)
+#SBATCH -t 5:00:00  # Run Time (hh:mm:ss) - 1.5 hours (optional)
 #SBATCH --mem=4G # Memory to be allocated PER NODE
 
-module load XXX
+module load miniconda3/3.12
+module load edirect/062020
 
-efetch -db nuccore -id accession MN822248 -format fasta >OpA01Seq
-efetch -db nuccore -id accession MN822249 -format fasta >OpB01Seq
-efetch -db nuccore -id accession MN822250 -format fasta >OpC01Seq
-efetch -db nuccore -id accession MN822251 -format fasta >OpC02Seq
-efetch -db nuccore -id accession MN822252 -format fasta >OpC03Seq
-efetch -db nuccore -id accession MN822253 -format fasta >OpC04Seq
-efetch -db nuccore -id accession MN822254 -format fasta >OpC05Seq
-efetch -db nuccore -id accession MN822256 -format fasta >OpD02Seq
-efetch -db nuccore -id accession MN822257 -format fasta >OpD03Seq
-efetch -db nuccore -id accession MN822258 -format fasta >OpD04Seq
-efetch -db nuccore -id accession MN822259 -format fasta >OpD05Seq
-efetch -db nuccore -id accession MN822260 -format fasta >OpD06Seq
-efetch -db nuccore -id accession MN822261 -format fasta >OpD07Seq
-efetch -db nuccore -id accession MN822262 -format fasta >OpD08Seq
-efetch -db nuccore -id accession MN822263 -format fasta >OpD09Seq
-efetch -db nuccore -id accession MN822264 -format fasta >OpD10Seq
-efetch -db nuccore -id accession MN822265 -format fasta >OpD11Seq
-efetch -db nuccore -id accession MN822266 -format fasta >OpD12Seq
-efetch -db nuccore -id accession MN822267 -format fasta >OpD13Seq
-efetch -db nuccore -id accession MN822268 -format fasta >OpD14Seq
-efetch -db nuccore -id accession MN822269 -format fasta >OpD15Seq
-efetch -db nuccore -id accession MN822270 -format fasta >OpD16Seq
-efetch -db nuccore -id accession MN822271 -format fasta >OpD17Seq
-efetch -db nuccore -id accession MN822272 -format fasta >OpD18Seq
-efetch -db nuccore -id accession MN822273 -format fasta >OpD19Seq
-efetch -db nuccore -id accession MN822274 -format fasta >OpD20Seq
-efetch -db nuccore -id accession MN822275 -format fasta >OpD21Seq
-efetch -db nuccore -id accession MN822276 -format fasta >OpD22Seq
-efetch -db nuccore -id accession MN822277 -format fasta >OpD23Seq
-efetch -db nuccore -id accession MN822278 -format fasta >OpD24Seq
-efetch -db nuccore -id accession MN822279 -format fasta >OpD25Seq
-efetch -db nuccore -id accession MN822280 -format fasta >OpD26Seq
-efetch -db nuccore -id accession MN822281 -format fasta >OpD27Seq
-efetch -db nuccore -id accession MN822282 -format fasta >OpD28Seq
-efetch -db nuccore -id accession MN822283 -format fasta >OpD29Seq
-efetch -db nuccore -id accession MN822284 -format fasta >OpD30Seq
-efetch -db nuccore -id accession MN822285 -format fasta >OpD31Seq
-efetch -db nuccore -id accession MN822286 -format fasta >OpD32Seq
-efetch -db nuccore -id accession MN822287 -format fasta >OpD33Seq
-efetch -db nuccore -id accession MN822288 -format fasta >OpD34Seq
-efetch -db nuccore -id accession MN822289 -format fasta >OpD35Seq
-efetch -db nuccore -id accession MN822290 -format fasta >OpD36Seq
-efetch -db nuccore -id accession MN822291 -format fasta >OpD37Seq
-efetch -db nuccore -id accession MN822292 -format fasta >OpD38Seq
+efetch -db nuccore -id accession MN822248 -format fasta >OpA01Seq.out
+efetch -db nuccore -id accession MN822249 -format fasta >OpB01Seq.out
+efetch -db nuccore -id accession MN822250 -format fasta >OpC01Seq.out
+efetch -db nuccore -id accession MN822251 -format fasta >OpC02Seq.out
+efetch -db nuccore -id accession MN822252 -format fasta >OpC03Seq.out
+efetch -db nuccore -id accession MN822253 -format fasta >OpC04Seq.out
+efetch -db nuccore -id accession MN822254 -format fasta >OpC05Seq.out
+efetch -db nuccore -id accession MN822256 -format fasta >OpD02Seq.out
+efetch -db nuccore -id accession MN822257 -format fasta >OpD03Seq.out
+efetch -db nuccore -id accession MN822258 -format fasta >OpD04Seq.out
+efetch -db nuccore -id accession MN822259 -format fasta >OpD05Seq.out
+efetch -db nuccore -id accession MN822260 -format fasta >OpD06Seq.out
+efetch -db nuccore -id accession MN822261 -format fasta >OpD07Seq.out
+efetch -db nuccore -id accession MN822262 -format fasta >OpD08Seq.out
+efetch -db nuccore -id accession MN822263 -format fasta >OpD09Seq.out
+efetch -db nuccore -id accession MN822264 -format fasta >OpD10Seq.out
+efetch -db nuccore -id accession MN822265 -format fasta >OpD11Seq.out
+efetch -db nuccore -id accession MN822266 -format fasta >OpD12Seq.out
+efetch -db nuccore -id accession MN822267 -format fasta >OpD13Seq.out
+efetch -db nuccore -id accession MN822268 -format fasta >OpD14Seq.out
+efetch -db nuccore -id accession MN822269 -format fasta >OpD15Seq.out
+efetch -db nuccore -id accession MN822270 -format fasta >OpD16Seq.out
+efetch -db nuccore -id accession MN822271 -format fasta >OpD17Seq.out
+efetch -db nuccore -id accession MN822272 -format fasta >OpD18Seq.out
+efetch -db nuccore -id accession MN822273 -format fasta >OpD19Seq.out
+efetch -db nuccore -id accession MN822274 -format fasta >OpD20Seq.out
+efetch -db nuccore -id accession MN822275 -format fasta >OpD21Seq.out
+efetch -db nuccore -id accession MN822276 -format fasta >OpD22Seq.out
+efetch -db nuccore -id accession MN822277 -format fasta >OpD23Seq.out
+efetch -db nuccore -id accession MN822278 -format fasta >OpD24Seq.out
+efetch -db nuccore -id accession MN822279 -format fasta >OpD25Seq.out
+efetch -db nuccore -id accession MN822280 -format fasta >OpD26Seq.out
+efetch -db nuccore -id accession MN822281 -format fasta >OpD27Seq.out
+efetch -db nuccore -id accession MN822282 -format fasta >OpD28Seq.out
+efetch -db nuccore -id accession MN822283 -format fasta >OpD29Seq.out
+efetch -db nuccore -id accession MN822284 -format fasta >OpD30Seq.out
+efetch -db nuccore -id accession MN822285 -format fasta >OpD31Seq.out
+efetch -db nuccore -id accession MN822286 -format fasta >OpD32Seq.out
+efetch -db nuccore -id accession MN822287 -format fasta >OpD33Seq.out
+efetch -db nuccore -id accession MN822288 -format fasta >OpD34Seq.out
+efetch -db nuccore -id accession MN822289 -format fasta >OpD35Seq.out
+efetch -db nuccore -id accession MN822290 -format fasta >OpD36Seq.out
+efetch -db nuccore -id accession MN822291 -format fasta >OpD37Seq.out
+efetch -db nuccore -id accession MN822292 -format fasta >OpD38Seq.out
