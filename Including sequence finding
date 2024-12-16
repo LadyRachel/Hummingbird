@@ -40,7 +40,7 @@ Scripts
 
 #SBATCH -p 128x24   # Partition name
 #SBATCH -J 10blasts       # Job name
-#SBATCH --mail-user= rlparson@ucsc.edu
+#SBATCH --mail-user=rlparson@ucsc.edu
 #SBATCH --mail-type=ALL
 #SBATCH -o 105first10opsinblast    # Name of stdout output file
 #SBATCH -N 1       # Total number of nodes requested (128x24/Instructional only)
