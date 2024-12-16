@@ -1,4 +1,16 @@
+#!/bin/bash
 
+#SBATCH -p 128x24   # Partition name
+#SBATCH -J NAME_job        # Job name
+#SBATCH --mail-user= email
+#SBATCH --mail-type=ALL
+#SBATCH -o name_out_file    # Name of stdout output file
+#SBATCH -N 1       # Total number of nodes requested (128x24/Instructional only)
+#SBATCH -n 16        # Total number of mpi tasks requested per node
+#SBATCH -t 12:00:00  # Run Time (hh:mm:ss) - 1.5 hours (optional)
+#SBATCH --mem=4G # Memory to be allocated PER NODE
+
+module load XXX
 
 efetch -db nuccore -id accession MN822248 -format fasta >OpA01Seq
 efetch -db nuccore -id accession MN822249 -format fasta >OpB01Seq
