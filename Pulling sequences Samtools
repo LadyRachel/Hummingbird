@@ -31,37 +31,38 @@ samtools faidx -n 0 GCF_022113875.1_Hydra_105_v3_genomic.fna NC_061169.1:2471941
 samtools faidx -n 0 GCF_022113875.1_Hydra_105_v3_genomic.fna NC_061169.1:24719413-24718475>numseq105OpD14
 samtools faidx -n 0 GCF_022113875.1_Hydra_105_v3_genomic.fna NC_061169.1:24653554-24654525>numseq105OpD15
 samtools faidx -n 0 GCF_022113875.1_Hydra_105_v3_genomic.fna NC_061169.1:25493462-25494433>numseq105OpD15a
-samtools faidx -n 0 GCF_022113875.1_Hydra_105_v3_genomic.fna NC_061166.1:30920040-30920927>numseq105OpD16 
-OpD16a NC_061166.1
-OpD17 NC_061166.1
-OpD17a NC_061166.1
-OpD18 NC_061166.1
-OpD18a NC_061166.1
-OpD18b NC_061166.1
-OpD19 NC_061166.1
-OpD20 NC_061164.1
-OpD21 NC_061162.1
-OpD22 NC_061164.1
-OpD22a NC_061164.1
-OpD23 NC_061164.1
-OpD23a NC_061164.1
-OpD24 NC_061164.1
-OpD25 NC_061156.1
-OpD26 NC_061162.1
-OpD27 NC_061164.1
-OpD28 NC_061164.1
-OpD29 NC_061164.1
-OpD30 NC_061157.1
-OpD30a NC_061157.1
-OpD31 NC_061157.1
-OpD31a NC_061157.1
-OpD32 NC_061170.1
-OpD33 NC_061157.1
-OpD34 NC_061168.1
-OpD35 NC_061161.1
-OpD36 NC_061161.1
-OpD37 NC_061164.1
-OpD38 NC_061165.1
+samtools faidx -n 0 GCF_022113875.1_Hydra_105_v3_genomic.fna NC_061166.1:30920040-30920927>numseq105OpD16
+samtools faidx -n 0 GCF_022113875.1_Hydra_105_v3_genomic.fna NC_061166.1:30966677-30967544>numseq105OpD16a
+samtools faidx -n 0 GCF_022113875.1_Hydra_105_v3_genomic.fna NC_061166.1:30920040-30967621>numseq105OpD17
+samtools faidx -n 0 GCF_022113875.1_Hydra_105_v3_genomic.fna NC_061166.1:30920035-30920958>numseq105OpD17a
+samtools faidx -n 0 GCF_022113875.1_Hydra_105_v3_genomic.fna NC_061166.1:31005163-31006110>numseq105OpD18
+samtools faidx -n 0 GCF_022113875.1_Hydra_105_v3_genomic.fna NC_061166.1:30966691-30967577>numseq105OpD18a
+samtools faidx -n 0 GCF_022113875.1_Hydra_105_v3_genomic.fna NC_061166.1:30920071-30920981>numseq105OpD18b
+samtools faidx -n 0 GCF_022113875.1_Hydra_105_v3_genomic.fna NC_061166.1:31067830-31066904>numseq105OpD19
+samtools faidx -n 0 GCF_022113875.1_Hydra_105_v3_genomic.fna NC_061164.1:43666701-43667615>numseq105OpD20
+samtools faidx -n 0 GCF_022113875.1_Hydra_105_v3_genomic.fna NC_061162.1:15317203-15316292>numseq105OpD21
+samtools faidx -n 0 GCF_022113875.1_Hydra_105_v3_genomic.fna NC_061164.1:29014593-29015462>numseq105OpD22
+samtools faidx -n 0 GCF_022113875.1_Hydra_105_v3_genomic.fna NC_061164.1:28968818-28969668>numseq105OpD22a
+samtools faidx -n 0 GCF_022113875.1_Hydra_105_v3_genomic.fna NC_061164.1:28968805-28969755>numseq105OpD23
+samtools faidx -n 0 GCF_022113875.1_Hydra_105_v3_genomic.fna NC_061164.1:29014613-29015549>numseq105OpD23a
+samtools faidx -n 0 GCF_022113875.1_Hydra_105_v3_genomic.fna NC_061164.1:28846685-28845726>numseq105OpD24
+samtools faidx -n 0 GCF_022113875.1_Hydra_105_v3_genomic.fna NC_061156.1:5381105-5380182>numseq105OpD25
+samtools faidx -n 0 GCF_022113875.1_Hydra_105_v3_genomic.fna NC_061162.1:30274737-30273826>numseq105OpD26
+samtools faidx -n 0 GCF_022113875.1_Hydra_105_v3_genomic.fna NC_061164.1:14264063-14263134>numseq105OpD27
+samtools faidx -n 0 GCF_022113875.1_Hydra_105_v3_genomic.fna NC_061164.1:42782247-42782841>numseq105OpD28
+samtools faidx -n 0 GCF_022113875.1_Hydra_105_v3_genomic.fna NC_061164.1:41469245-41468652>numseq105OpD28a
+samtools faidx -n 0 GCF_022113875.1_Hydra_105_v3_genomic.fna NC_061164.1:44275069-44274134>numseq105OpD29
+samtools faidx -n 0 GCF_022113875.1_Hydra_105_v3_genomic.fna NC_061157.1:64478820-64477896>numseq105OpD30
+samtools faidx -n 0 GCF_022113875.1_Hydra_105_v3_genomic.fna NC_061157.1:64402090-64401169>numseq105OpD30a
+samtools faidx -n 0 GCF_022113875.1_Hydra_105_v3_genomic.fna NC_061157.1:64433825-64432845>numseq105OpD31
+samtools faidx -n 0 GCF_022113875.1_Hydra_105_v3_genomic.fna NC_061157.1:64402043-64401112>numseq105OpD31a
+samtools faidx -n 0 GCF_022113875.1_Hydra_105_v3_genomic.fna NC_061170.1:26638747-26637791>numseq105OpD32
+samtools faidx -n 0 GCF_022113875.1_Hydra_105_v3_genomic.fna NC_061157.1:64862500-64861577>numseq105OpD33 NC_061157.1
+samtools faidx -n 0 GCF_022113875.1_Hydra_105_v3_genomic.fna NC_061168.1:36533651-36534475>numseq105OpD34 NC_061168.1
+samtools faidx -n 0 GCF_022113875.1_Hydra_105_v3_genomic.fna NC_061161.1:48103242-48102325>numseq105OpD35 NC_061161.1
+samtools faidx -n 0 GCF_022113875.1_Hydra_105_v3_genomic.fna NC_061161.1:50600511-50599588>numseq105OpD36 NC_061161.1
+samtools faidx -n 0 GCF_022113875.1_Hydra_105_v3_genomic.fna NC_061164.1:39436587-39437522>numseq105OpD37 NC_061164.1
+samtools faidx -n 0 GCF_022113875.1_Hydra_105_v3_genomic.fna NC_061165.1:8403164-8403868>numseq105OpD38 NC_061165.1
 
 
 >NC_061156.1 Hydra vulgaris isolate 105 chromosome 1, Hydra_105_v3, whole genome shotgun sequence
