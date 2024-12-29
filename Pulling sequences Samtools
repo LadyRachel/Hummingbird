@@ -57,12 +57,12 @@ samtools faidx -n 0 GCF_022113875.1_Hydra_105_v3_genomic.fna NC_061157.1:6440209
 samtools faidx -n 0 GCF_022113875.1_Hydra_105_v3_genomic.fna NC_061157.1:64433825-64432845>numseq105OpD31
 samtools faidx -n 0 GCF_022113875.1_Hydra_105_v3_genomic.fna NC_061157.1:64402043-64401112>numseq105OpD31a
 samtools faidx -n 0 GCF_022113875.1_Hydra_105_v3_genomic.fna NC_061170.1:26638747-26637791>numseq105OpD32
-samtools faidx -n 0 GCF_022113875.1_Hydra_105_v3_genomic.fna NC_061157.1:64862500-64861577>numseq105OpD33 NC_061157.1
-samtools faidx -n 0 GCF_022113875.1_Hydra_105_v3_genomic.fna NC_061168.1:36533651-36534475>numseq105OpD34 NC_061168.1
-samtools faidx -n 0 GCF_022113875.1_Hydra_105_v3_genomic.fna NC_061161.1:48103242-48102325>numseq105OpD35 NC_061161.1
-samtools faidx -n 0 GCF_022113875.1_Hydra_105_v3_genomic.fna NC_061161.1:50600511-50599588>numseq105OpD36 NC_061161.1
-samtools faidx -n 0 GCF_022113875.1_Hydra_105_v3_genomic.fna NC_061164.1:39436587-39437522>numseq105OpD37 NC_061164.1
-samtools faidx -n 0 GCF_022113875.1_Hydra_105_v3_genomic.fna NC_061165.1:8403164-8403868>numseq105OpD38 NC_061165.1
+samtools faidx -n 0 GCF_022113875.1_Hydra_105_v3_genomic.fna NC_061157.1:64862500-64861577>numseq105OpD33
+samtools faidx -n 0 GCF_022113875.1_Hydra_105_v3_genomic.fna NC_061168.1:36533651-36534475>numseq105OpD34
+samtools faidx -n 0 GCF_022113875.1_Hydra_105_v3_genomic.fna NC_061161.1:48103242-48102325>numseq105OpD35
+samtools faidx -n 0 GCF_022113875.1_Hydra_105_v3_genomic.fna NC_061161.1:50600511-50599588>numseq105OpD36
+samtools faidx -n 0 GCF_022113875.1_Hydra_105_v3_genomic.fna NC_061164.1:39436587-39437522>numseq105OpD37
+samtools faidx -n 0 GCF_022113875.1_Hydra_105_v3_genomic.fna NC_061165.1:8403164-8403868>numseq105OpD38
 
 
 >NC_061156.1 Hydra vulgaris isolate 105 chromosome 1, Hydra_105_v3, whole genome shotgun sequence
