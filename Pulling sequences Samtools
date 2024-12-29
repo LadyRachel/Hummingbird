@@ -6,12 +6,19 @@ Sam tools!
 #MAKE SURE THE SEQUENCE COMES FROM THAT CHROMOSOME 
 #Can find the chromosome name from looking at the fai file using "head XXX.fna.fai"
 
+#!/bin/bash
 
+#SBATCH -p 128x24   # Partition name
+#SBATCH -J OpsinSeq105       # Job name
+#SBATCH --mail-user=rlparson@ucsc.edu
+#SBATCH --mail-type=ALL
+#SBATCH -o OpsinSeq105error.out    # Name of stdout output file
+#SBATCH -N 1       # Total number of nodes requested (128x24/Instructional only)
+#SBATCH -t 5:00:00  # Run Time (hh:mm:ss) - 1.5 hours (optional)
+#SBATCH --mem=4G # Memory to be allocated PER NODE
 
-module load blast 
 module load miniconda3/3.12
 module load samtools
-[rlparson@hb-login ~]$  samtools faidx -n 0 GCF_022113875.1_Hydra_105_v3_genomic.fna NC_061164.1:24867664-24868590>H105SeqOPD1
 
 samtools faidx -n 0 GCF_022113875.1_Hydra_105_v3_genomic.fna NC_061164.1:24867664-24868590>numseq105OpD01
 samtools faidx -n 0 GCF_022113875.1_Hydra_105_v3_genomic.fna NC_061164.1:24914886-24914193>numseq105OpD02 
