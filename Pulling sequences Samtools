@@ -19,7 +19,7 @@ Sam tools!
 
 module load miniconda3/3.12
 module load samtools
-
+cat numseq105OpD01.out numseq105OpD02.out numseq105OpD03.out numseq105OpD04.out numseq105OpD05.out numseq105OpD06.out numseq105OpD07.out numseq105OpD08.out numseq105OpD10.out numseq105OpD11.out numseq105OpD11a.out numseq105OpD12.out >seqcatD01D12
 samtools faidx -n 0 GCF_022113875.1_Hydra_105_v3_genomic.fna NC_061164.1:24867664-24868590>numseq105OpD01.out
 samtools faidx -n 0 GCF_022113875.1_Hydra_105_v3_genomic.fna NC_061164.1:24914193-24914886>numseq105OpD02.out
 samtools faidx -n 0 GCF_022113875.1_Hydra_105_v3_genomic.fna NC_061164.1:24933995-24934900>numseq105OpD03.out
