@@ -1,8 +1,16 @@
 # Hummingbird
 
+#Do i want to test for selection for amino acids--are there spots being conserved or
 #3-4-25: In IQ tree need to delete H vulgaris sequences
 grep "hydra"
-keep hydractinia
+keep hydractinia but get rid of the hydra opsins
+
+in excel tab delineated extracts the sequences from AEP and olig
+put into word 
+make into a fasta
+cat the filtered file from kyle with the AEP
+
+name something final_opsins_list.fasta
 
 #3-3-25: 
 PREDICTED: Hydra vulgaris opsin-3 (LOC105847721), mRNA
