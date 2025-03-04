@@ -1,6 +1,8 @@
 # Hummingbird
 
 #Do i want to test for selection for amino acids--are there spots being conserved or
+
+
 #3-4-25: In IQ tree need to delete H vulgaris sequences
 grep "hydra"
 keep hydractinia but get rid of the hydra opsins
