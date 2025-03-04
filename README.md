@@ -1,6 +1,10 @@
 # Hummingbird
 
-#3-4-25: 
+#3-4-25: In IQ tree need to delete H vulgaris sequences
+grep "hydra"
+keep hydractinia
+
+#3-3-25: 
 PREDICTED: Hydra vulgaris opsin-3 (LOC105847721), mRNA
 
 HOLI01635.G27067-> kept from Kevins check
