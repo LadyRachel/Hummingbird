@@ -1,4 +1,7 @@
 # Hummingbird
+4-1-2025: IQ tree, need to add sequences to fasta file
+
+then need to run script 
 
 #Do i want to test for selection for amino acids--are there spots being conserved or
 ask Maya for pass for Itol
