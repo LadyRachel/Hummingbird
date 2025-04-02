@@ -1,5 +1,6 @@
 # Hummingbird
-4-1-2025: IQ tree, need to add sequences to fasta file
+4-1-2025: made cat file, need to run SLURM
+IQ tree, need to add sequences to fasta file
 made: C:\Users\Rachel Parsons\Documents\25Opsin\RP_3Hydra_formatted_sequences.fasta 
 using VS code Python script then manually removed blank lines
 need to cat that with Kyles file but docs in Macias Munoz group on hummingbird dont have write permissions
