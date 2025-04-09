@@ -1,4 +1,15 @@
 # Hummingbird
+4-9-2025: 
+NOT OPSINS
+(tyramine receptor in corals?)
+HV105.MN822248
+HVAEP12.G022632
+HOLI01874.G49006
+
+(xenopsin?) 
+HV105.MN822249
+HVAEP1.G000950
+HOLI01595.G13504
 4-1-2025: made cat file, need to run SLURM
 IQ tree, need to add sequences to fasta file
 made: C:\Users\Rachel Parsons\Documents\25Opsin\RP_3Hydra_formatted_sequences.fasta 
