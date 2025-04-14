@@ -1,4 +1,8 @@
 # Hummingbird
+4-14-2025: Keep the yes or no for present lysine site on the sequnecne page
+
+collapse the early rooted ones-- (non-opsin?) ASO-1 and ASO-II also collapse but annotate! tetraopsin (retinochrome, neuropsin), R-opsin, c-opsin, xenopsin, anthazoan cnidops(?), 
+there is only one removed opsin! The other is still in cnidops
 4-9-2025: 
 NOT OPSINS
 (tyramine receptor in corals?)
