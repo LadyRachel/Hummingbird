@@ -1,4 +1,17 @@
 # Hummingbird
+expression ones 
+G004648-maybe
+G025463-bc nematocysts
+G014551-? neurons?
+G020424-No, not high enough expression
+G025592
+G013153-no, not high 
+G021759
+
+Find wnt3 on NCBI then blast to AEP
+
+test of selection on amino acid sequences (Look into it!)
+
 4-14-2025: Keep the yes or no for present lysine site on the sequnecne page
 
 collapse the early rooted ones-- (non-opsin?) ASO-1 and ASO-II also collapse but annotate! tetraopsin (retinochrome, neuropsin), R-opsin, c-opsin, xenopsin, anthazoan cnidops(?), 
