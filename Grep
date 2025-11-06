@@ -1,3 +1,15 @@
+#!/bin/bash
+
+#SBATCH -p 128x24   # Partition name
+#SBATCH -J GrepOpsin       # Job name
+#SBATCH --mail-user=rlparson@ucsc.edu
+#SBATCH --mail-type=ALL
+#SBATCH -o GrepOpsinerror.out    # Name of stdout output file
+#SBATCH -N 1       # Total number of nodes requested (128x24/Instructional only)
+#SBATCH -t 5:00:00  # Run Time (hh:mm:ss) - 1.5 hours (optional)
+#SBATCH --mem=4G # Memory to be allocated PER NODE
+
+
 grep "5380182" genomic.gff -out 5380182.out
 grep "8403164" genomic.gff -out 8403164.out
 grep "30920035" genomic.gff -out 30920035.out
