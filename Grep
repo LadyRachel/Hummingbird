@@ -1,0 +1,51 @@
+grep "5380182" genomic.gff -out 5380182.out
+grep "8403164" genomic.gff -out 8403164.out
+grep "30920035" genomic.gff -out 30920035.out
+grep "30966640" genomic.gff -out 30966640.out
+grep "31005163" genomic.gff -out 31005163.out
+grep "31066904" genomic.gff -out 31066904.out
+grep "36533651" genomic.gff -out 36533651.out
+grep "36850427" genomic.gff -out 36850427.out
+grep "24653554" genomic.gff -out 24653554.out
+grep "24718475" genomic.gff -out 24718475.out
+grep "25493462" genomic.gff -out 25493462.out
+grep "26637791" genomic.gff -out 26637791.out
+grep "39753863" genomic.gff -out 39753863.out
+grep "53994504" genomic.gff -out 53994504.out
+grep "57194410" genomic.gff -out 57194410.out
+grep "57638486" genomic.gff -out 57638486.out
+grep "57822440" genomic.gff -out 57822440.out
+grep "57825784" genomic.gff -out 57825784.out
+grep "57890049" genomic.gff -out 57890049.out
+grep "64401112" genomic.gff -out 64401112.out
+grep "64432845" genomic.gff -out 64432845.out
+grep "64477896" genomic.gff -out 64477896.out
+grep "64861577" genomic.gff -out 64861577.out
+grep "14218069" genomic.gff -out 14218069.out
+grep "14688486" genomic.gff -out 14688486.out
+grep "46007953" genomic.gff -out 46007953.out
+grep "48102325" genomic.gff -out 48102325.out
+grep "50599588" genomic.gff -out 50599588.out
+grep "15316292" genomic.gff -out 15316292.out
+grep "30273826" genomic.gff -out 30273826.out
+grep "27626162" genomic.gff -out 27626162.out
+grep "14263134" genomic.gff -out 14263134.out
+grep "24867664" genomic.gff -out 24867664.out
+grep "24914193" genomic.gff -out 24914193.out
+grep "25824665" genomic.gff -out 25824665.out
+grep "28845726" genomic.gff -out 28845726.out
+grep "28968805" genomic.gff -out 28968805.out
+grep "28968818" genomic.gff -out 28968818.out
+grep "29014593" genomic.gff -out 29014593.out
+grep "39436587" genomic.gff -out 39436587.out
+grep "41468652" genomic.gff -out 41468652.out
+grep "42782247" genomic.gff -out 42782247.out
+grep "42824078" genomic.gff -out 42824078.out
+grep "43093576" genomic.gff -out 43093576.out
+grep "43666701" genomic.gff -out 43666701.out
+grep "44274134" genomic.gff -out 44274134.out
+grep "24933995" genomic.gff -out 24933995.out
+
+
+
+
