@@ -1,0 +1,19 @@
+#SBATCH --job-name=<!!JOBNAME!!>
+#SBATCH --mail-user=<!!CruzID!!>@ucsc.edu
+#SBATCH --mail-type=BEGIN,END,FAIL
+
+#SBATCH --partition=windfall
+#SBATCH --account=windfall
+#SBATCH --qos=windfall
+
+#SBATCH --nodelist=node-114
+#SBATCH --gres=gpu:nvidia_l40s:1
+
+#SBATCH --time=1-01:02:00
+
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=2
+#SBATCH --mem=4G
+
+#SBATCH --output=%x_%j.out
+#SBATCH --error=%x_%j.out
