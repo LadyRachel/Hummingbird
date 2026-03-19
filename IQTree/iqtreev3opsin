@@ -1,0 +1,23 @@
+#!/bin/bash
+#SBATCH --job-name=iqtreev3opsin
+#SBATCH --mail-user=rlparson@ucsc.edu
+#SBATCH --mail-type=BEGIN,END,FAIL
+
+#SBATCH --partition=windfall
+#SBATCH --account=windfall
+#SBATCH --qos=windfall
+
+#SBATCH --time=1-59:02:00
+
+#SBATCH --ntasks=1
+#SBATCH --cpus-per-task=2
+#SBATCH --mem=16G
+
+#SBATCH --output=iqtreev3opsin.out
+#SBATCH --error=iqtreev3opsin.out
+
+module load mafft/7.520
+module load iq-tree/3.0.1
+
+mafft.bat --thread 4 --auto --amino RP_KM_full_opsins.fasta > RP_KM_full_opsins_aligned.fasta
+iqtree3 -s RP_KM_full_opsins_aligned.fasta -m MFP -B 1000 -alrt 1000 -T AUTO --undo
