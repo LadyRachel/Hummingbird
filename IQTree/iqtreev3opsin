@@ -21,3 +21,25 @@ module load iq-tree/3.0.1
 
 mafft.bat --thread 4 --auto --amino RP_KM_full_opsins.fasta > RP_KM_full_opsins_aligned.fasta
 iqtree3 -s RP_KM_full_opsins_aligned.fasta -m MFP -B 1000 -alrt 1000 -T AUTO --undo
+
+
+#!/bin/bash
+#SBATCH -p lab-amaciasmunoz
+#SBATCH --qos=pi-amaciasmunoz
+#SBATCH --account=pi-amaciasmunoz
+#SBATCH -J iqtreev3opsin_RP
+#SBATCH --mail-user=rlparson@ucsc.edu
+#SBATCH --mail-type=ALL
+#SBATCH -o maaft_iqtree3_RP.out    # Name of stdout output file
+#SBATCH -N 1       # Total number of nodes requested
+#SBATCH -n 16        # Total number of mpi tasks requested per node
+#SBATCH -t 84:00:00  # Run Time (hh:mm:ss)
+#SBATCH --mem=16G # Memory to be allocated PER NODE
+
+module load mafft
+module load iq-tree
+
+mafft.bat --thread 4 --auto --amino RP_KM_full_opsins.fasta > RP_KM_full_opsins_aligned.fasta
+
+iqtree3 -s RP_KM_full_opsins_aligned.fasta -m MFP -B 1000 -alrt 1000 -T AUTO --undo
+
